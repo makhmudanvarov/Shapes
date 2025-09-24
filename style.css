@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title.active {
+    background-color: green;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial;
+    color: #fff;
+}
+
+.shape_box {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+
+.shape {
+    width: 170px;
+    height: 170px;
+    background-color: green;
+    cursor: pointer;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.tool_box {
+    display: flex;
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.shapes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.btn_shape {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    cursor: pointer;
+    -webkit-clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+      );
+      clip-path: polygon(
+        25% 0%,
+        75% 0%,
+        100% 50%,
+        75% 100%,
+        25% 100%,
+        0% 50%
+      );
+}
