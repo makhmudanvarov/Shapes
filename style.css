@@ -64,15 +64,33 @@
     cursor: pointer;
 }
 
+.color.red {
+    background-color: red;
+}
+.color.green {
+    background-color: green;
+}
+.color.blue {
+    background-color: blue;
+}
+.color.black {
+    background-color: black;
+}
+.color.cyan {
+    background-color: cyan;
+}
+.color.pink {
+    background-color: pink;
+}
+
 .shapes {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
     padding: 10px;
     border: 2px solid #333;
     border-radius: 8px;
-    width: fit-content;
 }
 
 .btn_shape {
@@ -97,3 +115,4 @@
         0% 50%
       );
 }
+
